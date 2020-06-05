@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame" />
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets><img id="room" src="images/Room_Still.jpg" /> </a-assets>
+
+      <!-- <a-sky id="image-360" src="#room">></a-sky> -->
+      <a-cylinder
+        color="black"
+        height="1"
+        wireframe="false"
+        theta-length="360"
+        radius-top="1"
+        radius-bottom="1"
+        open-ended="false"
+        fog="false"
+        position="0 2.6 0"
+      >
+        ></a-cylinder
+      >
+      <a-cylinder
+        color="black"
+        height="1"
+        wireframe="false"
+        theta-length="360"
+        radius-top="1"
+        radius-bottom="1"
+        open-ended="false"
+        fog="false"
+        position="0 .2 0"
+      >
+        ></a-cylinder
+      >
+
+      <a-curvedimage
+        src="#room"
+        height="15.0"
+        radius="10"
+        theta-length="360"
+        rotation="0 0 0"
+        scale="1 1 1"
+      ></a-curvedimage>
+    </a-scene>
+  </body>
+</html>
